@@ -10,21 +10,16 @@ const nextConfig: NextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
 
-  // Cloudflare Pages doesn't support standalone output
-  // output: 'standalone',
-  // outputFileTracingRoot: __dirname,
-  
+  output: 'export',
+
   // Disable webpack cache for Cloudflare Pages deployment
   webpack: (config) => {
     config.cache = false;
     return config;
   },
-  
-  turbopack: {
-    root: __dirname,
-  },
 
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -43,8 +38,6 @@ const nextConfig: NextConfig = {
         hostname: 'img9.doubanio.com',
       },
     ],
-    formats: ['image/webp'],
-    minimumCacheTTL: 60,
   },
 };
 
