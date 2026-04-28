@@ -10,8 +10,9 @@ const nextConfig: NextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
 
-  output: 'standalone',
-  outputFileTracingRoot: __dirname,
+  // Cloudflare Pages doesn't support standalone output
+  // output: 'standalone',
+  // outputFileTracingRoot: __dirname,
   
   // Disable webpack cache for Cloudflare Pages deployment
   webpack: (config) => {
