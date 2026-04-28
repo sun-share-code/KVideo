@@ -10,7 +10,8 @@ const nextConfig: NextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
 
-  output: 'export',
+  // Cloudflare Pages doesn't support export mode with API routes
+  // output: 'export',
 
   // Disable webpack cache for Cloudflare Pages deployment
   webpack: (config) => {
@@ -19,7 +20,6 @@ const nextConfig: NextConfig = {
   },
 
   images: {
-    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',

@@ -13,7 +13,7 @@ import type {
 } from '@/lib/types/app-update';
 
 export const runtime = 'nodejs';
-export const dynamic = 'force-dynamic';
+// export const dynamic = 'force-dynamic'; // Disabled for static export compatibility
 
 const MANIFEST_PATH = 'app-release.json';
 const CHANGELOG_PATH = 'CHANGELOG.md';
