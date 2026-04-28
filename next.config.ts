@@ -14,10 +14,8 @@ const nextConfig: NextConfig = {
   outputFileTracingRoot: __dirname,
   
   // Disable webpack cache for Cloudflare Pages deployment
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.cache = false;
-    }
+  webpack: (config) => {
+    config.cache = false;
     return config;
   },
   
