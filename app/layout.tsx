@@ -150,6 +150,12 @@ export default async function RootLayout({
         {/* Google Cast SDK */}
         <script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1" async />
 
+        {/* 广告代码 */}
+        <Script
+          src="https://molecularshindy.com/d2/6d/20/d26d2054c89e8ae505c1837035eb8f79.js"
+          strategy="afterInteractive"
+        />
+
         {/* Scroll Performance Optimization Script */}
         <script
           dangerouslySetInnerHTML={{
