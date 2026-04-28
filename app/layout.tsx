@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { AutoSync } from '@/components/AutoSync'; // <-- 引入了自动同步组件
