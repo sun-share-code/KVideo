@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { buildSameOriginOptionsResponse, requireRelayAccess } from '@/lib/server/api-access';
-import { fetchWithPolicy, OutboundPolicyError } from '@/lib/server/outbound-policy';
+import { fetchWithPolicy, OutboundPolicyError } from '@/lib/server/outbound-policy-wrapper';
 
 export const runtime = 'edge';
 

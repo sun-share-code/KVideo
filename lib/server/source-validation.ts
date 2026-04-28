@@ -4,7 +4,7 @@ import type { VideoSource } from '@/lib/types';
 import {
   assertOutboundUrlAllowed,
   sanitizeHeaderMap,
-} from '@/lib/server/outbound-policy';
+} from '@/lib/server/outbound-policy-wrapper';
 
 const SOURCE_ID_PATTERN = /^[a-z0-9-]+$/;
 

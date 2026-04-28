@@ -4,7 +4,7 @@ import {
   OutboundPolicyError,
   sanitizeReferer,
   sanitizeUserAgent,
-} from '@/lib/server/outbound-policy';
+} from '@/lib/server/outbound-policy-wrapper';
 import { buildSameOriginOptionsResponse, requireRelayAccess } from '@/lib/server/api-access';
 
 export const runtime = 'edge';

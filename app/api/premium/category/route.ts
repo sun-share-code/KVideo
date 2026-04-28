@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import type { VideoSource } from '@/lib/types';
-import { fetchWithPolicy } from '@/lib/server/outbound-policy';
+import { fetchWithPolicy } from '@/lib/server/outbound-policy-wrapper';
 import { normalizeSourceConfigList } from '@/lib/server/source-validation';
 
 export const runtime = 'edge';

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { requireAuthenticatedRequestIfConfigured } from '@/lib/server/api-access';
-import { assertOutboundUrlAllowed, fetchWithPolicy, OutboundPolicyError } from '@/lib/server/outbound-policy';
+import { assertOutboundUrlAllowed, fetchWithPolicy, OutboundPolicyError } from '@/lib/server/outbound-policy-wrapper';
 
 export const runtime = 'edge';
 

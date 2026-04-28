@@ -5,7 +5,7 @@ import {
   OutboundPolicyError,
   sanitizeReferer,
   sanitizeUserAgent,
-} from '@/lib/server/outbound-policy';
+} from '@/lib/server/outbound-policy-wrapper';
 import { getRuntimeFeatures } from '@/lib/server/runtime-features';
 
 export const runtime = 'edge';

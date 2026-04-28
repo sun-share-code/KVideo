@@ -3,7 +3,7 @@
  * Handles timeouts and retries
  */
 
-import { fetchWithPolicy } from '@/lib/server/outbound-policy';
+import { fetchWithPolicy } from '@/lib/server/outbound-policy-wrapper';
 
 const REQUEST_TIMEOUT = 15000;
 const MAX_RETRIES = 3;

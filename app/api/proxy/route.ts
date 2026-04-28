@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { processM3u8Content } from '@/lib/utils/proxy-utils';
 import { fetchWithRetry } from '@/lib/utils/fetch-with-retry';
 import { requireRelayAccess, buildSameOriginOptionsResponse } from '@/lib/server/api-access';
-import { OutboundPolicyError, getRelayForwardHeaders } from '@/lib/server/outbound-policy';
+import { OutboundPolicyError, getRelayForwardHeaders } from '@/lib/server/outbound-policy-wrapper';
 import { getRuntimeFeatures } from '@/lib/server/runtime-features';
 
 export const runtime = 'edge';

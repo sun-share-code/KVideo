@@ -1,4 +1,4 @@
-import { fetchWithPolicy } from '@/lib/server/outbound-policy';
+import { fetchWithPolicy } from '@/lib/server/outbound-policy-wrapper';
 
 interface FetchWithRetryOptions {
     url: string;
