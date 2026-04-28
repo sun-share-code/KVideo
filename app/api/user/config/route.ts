@@ -9,7 +9,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from '@/lib/server/auth';
 import { getRedisClient } from '@/lib/server/redis-client';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 function redisKey(profileId: string): string {
   const safe = profileId.replace(/[^a-zA-Z0-9_-]/g, '');

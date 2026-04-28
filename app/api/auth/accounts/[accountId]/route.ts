@@ -7,7 +7,7 @@ import {
   updateManagedAccount,
 } from '@/lib/server/auth';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 async function requireManagedSuperAdmin(request: NextRequest) {
   const config = await getPublicAuthConfig();

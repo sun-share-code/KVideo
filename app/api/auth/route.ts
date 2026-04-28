@@ -11,7 +11,7 @@ import {
   recordAuthFailure,
 } from '@/lib/server/auth-rate-limit';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export async function GET() {
   return NextResponse.json(await getPublicAuthConfig());

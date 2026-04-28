@@ -12,7 +12,7 @@ import { requireAuthenticatedRequestIfConfigured } from '@/lib/server/api-access
 import { buildSourceConfigMap, normalizeSourceConfig } from '@/lib/server/source-validation';
 import type { VideoSource } from '@/lib/types';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 interface ProbeRequest {
   id: string | number;

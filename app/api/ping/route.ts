@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { buildSameOriginOptionsResponse, requireRelayAccess } from '@/lib/server/api-access';
 import { fetchWithPolicy, OutboundPolicyError } from '@/lib/server/outbound-policy';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 async function pingUrl(url: string, method: 'HEAD' | 'GET'): Promise<void> {
   const controller = new AbortController();

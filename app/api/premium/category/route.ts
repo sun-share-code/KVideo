@@ -3,7 +3,7 @@ import type { VideoSource } from '@/lib/types';
 import { fetchWithPolicy } from '@/lib/server/outbound-policy';
 import { normalizeSourceConfigList } from '@/lib/server/source-validation';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 import { PREMIUM_SOURCES } from '@/lib/api/premium-sources';
 
 interface PremiumCategoryVideo {

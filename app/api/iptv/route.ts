@@ -7,7 +7,7 @@ import {
 } from '@/lib/server/outbound-policy';
 import { buildSameOriginOptionsResponse, requireRelayAccess } from '@/lib/server/api-access';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export async function GET(request: NextRequest) {
   const access = await requireRelayAccess(request);

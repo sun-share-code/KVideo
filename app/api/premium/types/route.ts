@@ -4,7 +4,7 @@ import { PREMIUM_SOURCES } from '@/lib/api/premium-sources';
 import { fetchWithPolicy } from '@/lib/server/outbound-policy';
 import { normalizeSourceConfigList } from '@/lib/server/source-validation';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export const revalidate = 3600; // Cache for 1 hour
 

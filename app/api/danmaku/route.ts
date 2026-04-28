@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { buildSameOriginOptionsResponse, requireAuthenticatedRequestIfConfigured } from '@/lib/server/api-access';
 import { fetchWithPolicy, OutboundPolicyError, assertOutboundUrlAllowed } from '@/lib/server/outbound-policy';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 function buildDanmakuTarget(baseUrl: URL, action: 'search' | 'comments', keyword?: string, episodeId?: string): URL {
   const normalizedBase = new URL(baseUrl.toString().replace(/\/+$/, '/'));

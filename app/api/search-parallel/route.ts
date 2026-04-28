@@ -6,7 +6,7 @@ import { requireAuthenticatedRequestIfConfigured } from '@/lib/server/api-access
 import { normalizeSourceConfigList } from '@/lib/server/source-validation';
 import type { VideoItem, VideoSource } from '@/lib/types';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 const MAX_TOTAL_VIDEOS = 2000;
 const MAX_PAGES_PER_SOURCE = 3;

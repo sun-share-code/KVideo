@@ -5,7 +5,7 @@ import { requireAuthenticatedRequestIfConfigured } from '@/lib/server/api-access
 import { normalizeSourceConfig } from '@/lib/server/source-validation';
 import type { VideoSource } from '@/lib/types';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 async function resolveSourceConfig(source: unknown): Promise<VideoSource | null> {
   if (typeof source === 'string') {

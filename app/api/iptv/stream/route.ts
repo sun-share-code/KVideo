@@ -8,7 +8,7 @@ import {
 } from '@/lib/server/outbound-policy';
 import { getRuntimeFeatures } from '@/lib/server/runtime-features';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 const STREAM_TIMEOUT_MS = 20000;
 const DEFAULT_USER_AGENT =

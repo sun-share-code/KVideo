@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { requireAuthenticatedRequestIfConfigured } from '@/lib/server/api-access';
 import { assertOutboundUrlAllowed, fetchWithPolicy, OutboundPolicyError } from '@/lib/server/outbound-policy';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 function isAllowedDoubanImageHost(hostname: string): boolean {
   return hostname === 'doubanio.com' || hostname.endsWith('.doubanio.com');

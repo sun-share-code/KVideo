@@ -3,7 +3,7 @@ import { getServerSession } from '@/lib/server/auth';
 import { getRedisClient } from '@/lib/server/redis-client';
 
 // 确保这行代码在整个文件中只出现一次
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export async function GET(request: NextRequest) {
   const session = await getServerSession(request);

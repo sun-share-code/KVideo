@@ -5,7 +5,7 @@ import { requireRelayAccess, buildSameOriginOptionsResponse } from '@/lib/server
 import { OutboundPolicyError, getRelayForwardHeaders } from '@/lib/server/outbound-policy';
 import { getRuntimeFeatures } from '@/lib/server/runtime-features';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 function buildPassThroughHeaders(response: Response): Headers {
   const headers = new Headers();

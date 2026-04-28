@@ -7,7 +7,7 @@ import {
   listAccountInfo,
 } from '@/lib/server/auth';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 async function requireSuperAdmin(request: NextRequest) {
   const config = await getPublicAuthConfig();
